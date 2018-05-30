@@ -1,0 +1,27 @@
+{
+  "name": "pvw-multi-view",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "16.4.0",
+    "react-dom": "16.4.0",
+    "paraviewweb": "3.2.2",
+    "hammerjs": "2.0.8",
+    "monologue.js": "0.3.5",
+    "wslink": "0.1.7"
+  },
+  "devDependencies": {
+    "kw-web-suite": "6.1.0"
+  },
+  "scripts": {
+    "validate": "prettier --config ../prettier.config.js --list-different \"src/**/*.js\"",
+    "reformat": "prettier --config ../prettier.config.js --write \"src/**/*.js\"",
+    "reformat-only": "prettier --config ../prettier.config.js --write",
+    "build": "webpack --progress --colors --mode development",
+    "build:release": "webpack --progress --colors --mode production"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
